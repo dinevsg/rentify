@@ -2,7 +2,7 @@
 {% load static %}
 {% block main %}
     <!-- component -->
-<div class="relative max-w-md mx-auto md:max-w-xl pt-10 mt-6 min-w-0 break-words border border-gray-200 shadow-sm dark:bg-gray-800 dark:border-gray-700 w-full mb-6 rounded-xl mt-16">
+<div class="relative max-w-md mx-auto md:max-w-xl pt-10 mt-20 min-w-0 break-words border border-gray-200 shadow-sm dark:bg-gray-800 dark:border-gray-700 w-full mb-6 rounded-xl mt-16">
     <div class="px-6 bg-coolGray-800">
         <div class="flex flex-wrap justify-center">
             <div class="w-full flex justify-center">
@@ -77,11 +77,11 @@
         </div>
         {% if request.user.pk == object.user.pk %}
         <div class="pb-6 flex justify-center items-center w-full">
-            <div class="flex-col grid gap-3 w-full sm:inline-flex">
-                <a class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="{% url 'profile-edit' pk=object.pk %}">
+            <div class="flex justify-center  gap-3 w-full">
+                <a class="py-3 w-28 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="{% url 'profile-edit' pk=object.pk %}">
                     Edit
                 </a>
-                <a class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="{% url 'profile-delete' pk=object.pk %}">
+                <a class="py-3 w-28 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="{% url 'profile-delete' pk=object.pk %}">
                     Delete
                 </a>
             </div>

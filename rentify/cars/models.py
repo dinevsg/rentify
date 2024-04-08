@@ -8,12 +8,6 @@ from rentify.categories.models import Category
 
 class Cars(models.Model):
 
-    # BRAND = (
-    #     ("BMW", "BMW"),
-    #     ("Mercedes", "Mercedes"),
-    #     ("Audi", "Audi"),
-    # )
-
     GEARBOX = (
         ("Manual", "Manual"),
         ("Auto", "Auto"),
@@ -33,7 +27,6 @@ class Cars(models.Model):
 
     image = models.ImageField(
         upload_to="cars_image",
-        default="static/images/no_image.png",
         null=True,
         blank=True,
     )
