@@ -32,7 +32,7 @@ class CreateCarView(LoginRequiredMixin, StaffRequiredMixin, CreateView):
 
 
 class CarsListView(ListView):
-    queryset = Cars.objects.all()
+    queryset = Cars.objects.all().order_by("-id")
     template_name = "cars/cars-list.html"
 
 
@@ -88,7 +88,7 @@ class CarsByCategoriesListView(SlugMixin, ListView):
 
     def get_queryset(self):
         category = Category.objects.get(slug=self.get_slug())
-        queryset = Cars.objects.filter(category=category)
+        queryset = Cars.objects.filter(category=category).order_by("-id")
         return queryset
 
 
@@ -106,5 +106,5 @@ class CarsByBrandListView(SlugMixin, ListView):
 
     def get_queryset(self):
         brand = Brand.objects.get(slug=self.get_slug())
-        queryset = Cars.objects.filter(brand=brand)
+        queryset = Cars.objects.filter(brand=brand).order_by("-id")
         return queryset

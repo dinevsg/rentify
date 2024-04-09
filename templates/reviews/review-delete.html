@@ -23,7 +23,7 @@
       </div>
 
       <div class="flex justify-end items-center gap-x-2 py-3 px-4 bg-gray-50 border-t rounded-b-lg border-white dark:bg-gray-800 dark:border-gray-700">
-        <a class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 text-gray-800 shadow-sm hover:bg-gray-50 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 bg-indigo-500" data-hs-overlay="#hs-danger-alert" href="{% url 'brands-list' %}">
+        <a class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 text-gray-800 shadow-sm hover:bg-gray-50 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 bg-indigo-500" data-hs-overlay="#hs-danger-alert" href="{% url 'reviews-list' %}">
             Cancel
         </a>
         <form action="{% url 'review-delete' pk=review.pk %}" method="post">
