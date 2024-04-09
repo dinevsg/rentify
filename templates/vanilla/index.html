@@ -16,7 +16,7 @@
       <!-- End SVG-->
     </div>
     <!-- End Col -->
-    <div>
+    <div class="mt-7">
       <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">Start your journey with <span class="text-blue-600">Rentify</span></h1>
       <p class="mt-3 text-lg text-gray-800 dark:text-gray-400">Choose the car that fits you best. Select dates and book it.</p>
     <p class="mt-3 text-2xl font-bold text-gray-800 dark:text-gray-200">Enjoy your ride.</p>
@@ -110,7 +110,7 @@
     {% for car in cars %}
     <div class="flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7] p-4 md:p-5 mb-6">
         <div class="relative rounded-t-xl overflow-hidden">
-            <img class="w-full h-56 top-0 start-0 rounded-xl object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-t-xl" src="{% if car.image %}{{ car.image.url }}{% else %}{%  static 'images/no_image.jpg' %}{% endif %}" alt="Image Description">
+            <img class="w-80 h-56 top-0 start-0 rounded-xl object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-t-xl" src="{% if car.image %}{{ car.image.url }}{% else %}{%  static 'images/no_image.jpg' %}{% endif %}" alt="Image Description">
         </div>
         <div class="p-4 md:p-5">
             <h3 class="text-lg text-center font-bold text-gray-800 dark:text-white">

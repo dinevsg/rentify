@@ -11,7 +11,7 @@
         </div>
     </div>
   <!-- Grid -->
-  <div class="grid md:grid-cols-2 mt-12 sm:grid-cols-1 lg:grid-cols-3 gap-6">
+  <div class="grid md:grid-cols-2 mt-12 sm:grid-cols-1 gap-6">
     <!-- Card -->
     {% for booking in object_list %}
     <div class="flex bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700">
@@ -78,7 +78,7 @@
  {% if not object_list %}
         <div class="items-center">
         <a class="w-full py-3 px-4 text-white/[.8] text-3xl justify-center inline-flex text-center gap-x-2 text-sm font-semibold">
-            You dont' have any bookings yet!
+            You don't have any bookings yet!
         </a>
         </div>
     {% endif %}
