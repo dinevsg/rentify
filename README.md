@@ -1,6 +1,6 @@
 <h2>Intro</h2>
   <p>Rentify is a car rental platform where users can book their desired car</p>
-  <p><a href="https://rentify-9i9u.onrender.com/">Rentify.com</a></p>
+  <p><a href="https://rentify-9i9u.onrender.com/">Rentify website</a></p>
   <p>For better experience use staff credentials
     <ul>
       <li>email - test@test.bg</li>
@@ -68,10 +68,14 @@
     <li>Clone this repository - <code>git clone https://github.com/dinevsg/rentify.git</code></li>
     <li>Install dependencies - <code>pip install -r requirements.txt</code></li>
     <li>Install node modules - <code>npm install</code></li>
+    <li>Setup Postgres Database and use your credentials in settings.py</li>
     <li>Migrate - <code>python manage.py migrate</code></li>
     <li>Create super user - <code>python manage.py createsuperuser</code></li>
     <li>Start app - <code>python manage.py runserver</code></li>
   </ul>
+  <br>
+  <p>Please note that some functionalities such as Google Authentication, Stripe & Mailtrap</p>
+  <p>need to be set up with your own credentials in order to properly configure and run the project locally with all of its extras</p>
 
 <h2>Screenshots</h2>
 <img src="https://iili.io/Jk6tjea.png">
